@@ -1,8 +1,20 @@
+// childNodes
+window.addEventListener("load", function () {
+  var section5 = document.getElementById("section5");
+  var box = section5.querySelector(".box");
+
+  var input1 = box.children[0];
+  var input2 = box.children[1];
+
+  input1.value = "hello";
+  input2.value = "okey";
+});
+
 // Selectors API
 window.addEventListener("load", function () {
   var section4 = document.getElementById("section4");
 
-  var txtX = section4.querySelector(".txt-x");
+  var txtX = section4.querySelector("input[name='x']"); // css선택자 설명하기 위해..
   var txtY = section4.querySelector(".txt-y");
   var btnAdd = section4.querySelector(".btn-add");
   var txtSum = section4.querySelector(".txt-sum");
